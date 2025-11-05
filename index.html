@@ -64,6 +64,10 @@
             margin-bottom: 10px;
         }
 
+        ul {
+            margin-left: 20px;
+        }
+
         footer {
             text-align: center;
             padding: 30px;
@@ -80,6 +84,36 @@
             text-decoration: underline;
         }
 
+        /* ==== Contact icons ==== */
+        .contact-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .contact-item {
+            background: #f5f9ff;
+            border: 1px solid #dce6ff;
+            border-radius: 12px;
+            padding: 15px 20px;
+            flex: 1 1 200px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.2s ease;
+        }
+
+        .contact-item:hover {
+            background: #eaf3ff;
+            transform: translateY(-3px);
+        }
+
+        .contact-item img {
+            width: 24px;
+            height: 24px;
+        }
+
         @media (max-width: 768px) {
             body {
                 padding: 0 5%;
@@ -91,6 +125,10 @@
 
             section {
                 padding: 30px 20px;
+            }
+
+            .contact-list {
+                flex-direction: column;
             }
         }
     </style>
@@ -119,6 +157,27 @@
             <li>IELTS 7.0 (Reading 8.0, Writing 7.0) - 2023</li>
             <li>Top 6% Scholarship for Computer Science major (1st semester)</li>
         </ul>
+    </section>
+
+    <!-- ✅ Contact Section -->
+    <section>
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me via the following platforms:</p>
+        <div class="contact-list">
+            <div class="contact-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Email">
+                <a href="mailto:24521356@gm.uit.edu.vn">Gmail</a>
+            </div>
+            <div class="contact-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                <a href="https://www.linkedin.com/in/phu-nguyen-binh/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="contact-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+                <a href="https://github.com/phunguyen15456" target="_blank">GitHub</a>
+            </div>
+           
+        </div>
     </section>
 
     <footer>
